@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApplication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper width=100vw height=100vh flex items-center justify-center relative flex-col">
+ 
+        <img class=" bg-cover w-full h-full object-cover overflow-y-hidden blur-[3px]"
+            src="images/IMG-20250802-WA0002-Picsart-AiImageEnhancer.jpg" alt="">
+        
+
+            <div class="absolute flex z-10 top-1 items-center justify-center gap-1">
+
+                <img src="images/img13.png" alt="" class="w-[130px] h-[130px]">
+
+                <h1 class="text-white font-bold font-serif text-4xl">Weather App</h1>
+
+            </div>
+
+        <div class="absolute w-[440px] h-[550px] z-10  flex flex-col items-center justify-center top-28">
+
+        
+            <div class="flex mt-[26px] mb-[15px]">
+
+                <input id="searchCity" type="text" class="w-[370px] h-[32px] rounded-[20px] bg-[#ffffff]  pt-[10px] pb-[13px] 
+                text-[14px] shadow-[inset_-2px_-2px_4px_#ffffff,inset_3px_3px_6px_#babecc] text-center" placeholder="Search City">
+
+                    <button onclick="fetchWeatherByCity()" class="w-[32px] h-[32px]  mx-[5px] rounded-full bg-white shadow-[inset_-3px_-3px_6px_#babecce1,inset_3px_3px_6px_#ffffff]">
+                        
+                        <img src="images/icons8-search-50.png" alt="" class="w-[65%] h-[65%] m-[4px] ml-[6px]">
+
+                    </button>
+            </div>
+
+            <div class="flex items-center  relative flex-col backdrop-blur-lg border border-white-600 w-[420px] h-[700px] rounded-[10px] 
+                 shadow-[0px_0px_0px_2px_rgb(0,0,0,0.3)] ">
+
+                <img src="images/icons8-location-50.png" alt="" class="mt-4 w-10">
+
+                <p id="city" class="text-white font-bold font-serif text-2xl mt-0" >pune</p>
+                
+               
+                <img id="myImage" src="images/img20.png" alt="" class="w-[220px] h-auto mt-0">
+          
+
+                <div class="w-[100%] flex gap-6 justify-start items-end  ">
+
+                    <p id="temp" class="text-white font-bold tabular-nums lining-nums font-serif text-6xl ml-5">45°C</p>
+                    
+                    <p id="desc" class="text-white font-semibold">undefined</p>
+
+                </div>
+        
+                <div class="flex gap-6 m-[20px]">
+
+                    <div class="w-[100px] h-[100px] bg-[#c3c3c35f] rounded-3xl flex flex-col items-center " >
+
+                        <img src="images/wind.png" alt="" class="w-[37px] mt-[7px]">
+
+                        <p class="text-white mt-[9px] text-sm font-medium">Wind Speed</p>
+
+                        <p id="wind" class="text-white">wind</p>
+                     
+                    </div>
+
+                    <div class="w-[100px] h-[100px] bg-[#c3c3c35f] rounded-3xl flex flex-col items-center ">
+
+                        <img src="images/hum1.png" alt="" class="w-[35px] mt-[8px]">
+
+                        <p class="text-white mt-[3px] text-sm font-medium">Humidity</p>
+
+                        <p id="humidity" class="text-white">humidity</p>
+
+                    </div>
+
+                    <div class="w-[100px] h-[100px] bg-[#c3c3c35f] rounded-3xl flex flex-col items-center ">
+
+                        <img src="images/cloud.png" alt="" class="w-[45px] mt-[9px]">
+
+                        <p class="text-white mt-[7px] text-sm font-medium">Cloudyness</p>
+
+                        <p id="cloud" class="text-white">cloud</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+  
+    <script src="index.js"></script>
+</body>
+</html>
