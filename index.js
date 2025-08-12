@@ -131,6 +131,9 @@ async function fetchWeatherByCity() {
 
 // }
 
+
+
 // showWeather();
+
 
 window.onload = getCurrentLocation;
