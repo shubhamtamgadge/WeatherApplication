@@ -49,6 +49,9 @@ function setImage(imageCode){
     else if(imageCode === "01d" || imageCode === "01n" || imageCode === "02d" || imageCode === "02n"){
        document.getElementById("myImage").src = "images/img21.png";
     }
+    else if(imageCode === "09d" || imageCode === "09n"){
+       document.getElementById("myImage").src = "images/img25.png";
+    }
    
    
 }
