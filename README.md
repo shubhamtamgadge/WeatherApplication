@@ -8,3 +8,17 @@
 • Designed with a clean and intuitive interface to ensure quick access to accurate weather details.
 
 • Tech Stack : HTML, Tailwind CSS, JavaScript
+
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## 🌐 Live Demo
+
+https://react-gsap-project.netlify.app/
+
+
