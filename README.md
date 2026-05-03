@@ -19,6 +19,6 @@ npm run dev
 
 ## 🌐 Live Demo
 
-https://react-gsap-project.netlify.app/
+https://my-wheather-application.netlify.app/
 
 
